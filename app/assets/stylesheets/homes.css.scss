@@ -26,11 +26,10 @@ h3 {
   text-align: center;
 }
 
-a {
-   -webkit-transition: color .1s ease-in;
-   -moz-transition: color .1s ease-in;
-   -webkit-transition: background .1s ease-in;
-   -moz-transition: background .1s ease-in;
+a,
+input[type="submit"] {
+   -webkit-transition: color .1s ease-in,  background .1s ease-in;
+   -moz-transition: color .1s ease-in, background .1s ease-in;
 }
 
 .wrapper {
@@ -122,7 +121,7 @@ a {
   font-weight: bold;
   border: 0;
   width: 90px;
-  padding: 12px 0;
+  padding: 11px 0 13px;
   float: right;
   margin: -45px 4px 0 0;
   z-index: 10;

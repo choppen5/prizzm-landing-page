@@ -6,10 +6,31 @@ body {
   background-color: #666;
 }
 
-h1, h2, h3, label, a, .col {
+h1 {
   font-weight: normal;
   font-family: 'Museo500';
-  line-height: 1.2;
+}
+
+h2, h3, label, a, .col, #privacy span {
+  font-weight: normal;
+  font-family: 'MuseoSans500';
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+   -webkit-transition: color .1s ease-in;
+   -moz-transition: color .1s ease-in;
+   -webkit-transition: background .1s ease-in;
+   -moz-transition: background .1s ease-in;
 }
 
 .wrapper {
@@ -27,6 +48,11 @@ h1, h2, h3, label, a, .col {
   height: 835px;
 }
 
+#home > div {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
 
 #home h1 {
   padding-top: 380px;
@@ -49,37 +75,85 @@ h1, h2, h3, label, a, .col {
 }
 
 #hiw #signup {
-  background-color: #19353c;
-  padding: 37px 0 19px;
+  background: #19353c;
+  padding: 35px 0;
+}
+
+#signup form {
+  width: 605px;
+  margin: 0 auto;
 }
 
 #hiw #signup label {
   color: #8db2be;
-  margin-right: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  float: left;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
 }
 
 #hiw #signup input[type=text] {
-  padding: 15px 100px 15px 5px;
-  width: 304px;
-  font-size: 17px;
-  margin-top: -10px;
+  padding: 15px 100px 15px 10px;
+  width: 295px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  border: 0;
+}
+
+#hiw #signup input[type=text]::-webkit-input-placeholder {
+  color: #bbb;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#hiw #signup input[type=text]:-moz-placeholder {
+  color: #bbb;
+  font-style: italic;
+  font-weight: 200;
 }
 
 #hiw #signup input[type=submit] {
+  background: #3ca0a1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  width: 90px;
+  padding: 12px 0;
+  float: right;
+  margin: -45px 4px 0 0;
+  z-index: 10;
   position: relative;
-  left: -92px;
-  top: -5px;
+  &:hover {
+    background: #46b4b5;
+  }
 }
 
 #hiw #learn-more {
-  background-color: #253f46;
-  padding: 23px;
+  background: #253f46;
+  padding: 25px 0;
 }
 
 #hiw #learn-more a {
-  color: #aaa;
+  color: #929fa3;
+  display: block;
+  width: 180px;
+  padding: 0 0 0 15px;
+  margin: 0 auto;
+  font-size: 14px;
   text-decoration: underline;
+  background: url('arrow-down.png') 0 center no-repeat;
+  &:hover {
+    color: #fff;
+  }
+}
+
+#works > div {
+  width: 810px;
+  margin: 0 auto;
 }
 
 #hiw #works {
@@ -89,7 +163,8 @@ h1, h2, h3, label, a, .col {
   padding: 45px 0 50px;
 }
 
-#hiw #works h1 {
+#hiw #works h2 {
+  margin: 0 0 50px 0;
 }
 
 #hiw #works .illustration {
@@ -100,53 +175,84 @@ h1, h2, h3, label, a, .col {
   padding-top: 192px;
 }
 
-#hiw .col {
-  float: left
+#hiw #works .col {
+  float: left;
+  width: 270px;
+  height: 190px;
+  &.arrow {
+    background: url('arrow.png') right 160px no-repeat;
+  }
 }
 
-#hiw .col .desc {
+#works .illu {
+  width: 270px;
+  height: 122px;
+  text-align: center;
+}
+
+#hiw #works .col .desc {
   color: #888;
+  width: 270px;
+  text-align: center;
+  margin: 30px 0 0 0;
+  font-size: 14px;
+}
+
+#ads > div {
+  width: 460px;
+  margin: 0 auto;
 }
 
 #hiw #ads {
   background-color: #dbdedf;
-  padding: 25px 0 30px;
-}
-
-#hiw #ads .illustration {
-  margin-left: 350px;
-  padding-bottom: 40px;
+  padding: 30px 0;
 }
 
 #hiw #ads .col {
-  margin-right: 20px;
+  float: left;
+  width: 115px;
+  padding: 30px 0;
 }
 
-#hiw #ads .col .desc {
-  color: #666;
+#ads .illu {
+  width: 115px;
+  height: 36px;
+  text-align: center;
+}
+
+#ads .desc {
+  color: #444;
+  text-align: center;
+  width: 115px;
+  margin: 10px 0 0 0;
 }
 
 // Privacy partial
+
+#privacy > div {
+  width: 800px;
+  margin: 0 auto;
+}
+
 #privacy {
   background-color: #fff;
   padding: 50px 0 150px;
 }
 
-#privacy h1 {
+#privacy h2 {
   color: #1b4755;
-  font-size: 40px;
-  margin-bottom: 10px;
 }
 
-#privacy h2 {
+#privacy h3 {
   color: #849ba2;
-  font-size: 30px;
-  margin-bottom: 40px;
+  margin: 10px 0 50px;
 }
 
 #privacy p {
   text-align: left;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 #privacy .desc {
@@ -154,14 +260,28 @@ h1, h2, h3, label, a, .col {
 }
 
 #privacy hr {
-  width: 50%;
-  margin-left: 300px;
+  width: 620px;
+  margin: 20px auto 30px;
 }
 
 #privacy span {
   color: #0f4b57;
-  font-weight: normal;
-  font-family: 'Museo500';
   font-size: 16px;
   margin-right: 20px;
+}
+
+.contact {
+  width: 325px;
+  margin: 0 auto;
+  a {
+    border-radius: 30px;
+    padding: 15px 15px 15px 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #203a3f url('contact.png') 15px center no-repeat;
+    &:hover {
+      text-decoration: none;
+      background: #2d5057 url('contact.png') 15px center no-repeat;
+    }
+  }
 }

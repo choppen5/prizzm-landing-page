@@ -1,23 +1,23 @@
-<div id="hiw" class="container">
+<div id="hiw">
   <div id="signup">
     <%= form_tag "#", :class => "form-inline" do -%>
       <%= label_tag :email, "Help fix advertising" -%>
       <%= text_field_tag :email, "", :placeholder => "email address" -%>
-      <%= submit_tag "Sign Up", :class => "btn btn-large btn-info" -%>
+      <%= submit_tag "Sign Up" -%>
     <%- end -%>
   </div>
 
   <div id="learn-more">
     <%= link_to "#" do -%>
-      <i class="icon-arrow-down"></i>Learn more about Prizzm
+      Learn more about Prizzm
     <%- end -%>
   </div>
 
   <div id="works">
-    <h1>How it works</h1>
+    <div>
+      <h2>How it works</h2>
 
-    <div class="illustration">
-      <div class="col span3">
+      <div class="col arrow">
         <div class="illu">
           <%= image_tag "check.png" -%>
         </div>
@@ -28,11 +28,7 @@
         </div>
       </div>
 
-      <div class="col arrow-col">
-        <%= image_tag "arrow.png" -%>
-      </div>
-
-      <div class="col span2">
+      <div class="col arrow">
         <div class="illu">
           <%= image_tag "global.png" -%>
         </div>
@@ -43,11 +39,7 @@
         </div>
       </div>
 
-      <div class="col arrow-col">
-        <%= image_tag "arrow.png" -%>
-      </div>
-
-      <div class="col span3">
+      <div class="col">
         <div class="illu">
           <%= image_tag "rate.png" -%>
         </div>
@@ -62,9 +54,8 @@
   </div>
 
   <div id="ads">
-    <h1>Ads suck</h1>
-
-    <div class="illustration">
+    <div>
+      <h2>Ads suck</h2>
       <div class="col">
         <div class="illu">
           <%= image_tag "spy.png" -%>
@@ -98,8 +89,7 @@
         </div>
       </div>
       <div class="clear"></div>
+      <h2>Prizzm fixes that</h2>
     </div>
-
-    <h1>Prizzm fixes that</h1>
   </div>
 </div>

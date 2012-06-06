@@ -12,9 +12,7 @@ doc/
 public/uploads/
 rmagick/
 routes.txt
-.idea/elusivestars.iml
 sslcerts/
-config/database.yml
 config/app_config.yml
 git_exclude/
 .sass-cache

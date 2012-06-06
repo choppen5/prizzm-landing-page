@@ -1,2 +1,21 @@
-<h1>Homes#landing</h1>
-<p>Find me in app/views/homes/landing.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prizzm</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <%= stylesheet_link_tag "application", :media => "all" -%>
+    <%= javascript_include_tag "application" -%>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper span12">
+        <%= render partial: 'homes/landing/home' -%>
+        <%= render partial: 'homes/landing/how_it_works' -%>
+        <%= render partial: 'homes/landing/privacy' -%>
+      </div>
+    </div>
+  </body>
+</html>

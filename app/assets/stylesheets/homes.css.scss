@@ -1,3 +1,167 @@
 // Place all the styles related to the Homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #666;
+}
+
+h1, h2, h3, label, a, .col {
+  font-weight: normal;
+  font-family: 'Museo500';
+  line-height: 1.2;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+// Home partial
+#home {
+  background-color: #0d2a31;
+  height: 835px;
+}
+
+
+#home h1 {
+  padding-top: 380px;
+  color: #fff;
+  font-size: 50px;
+}
+
+#home h2 {
+  color: #8bbcce;
+  font-size: 19px;
+}
+
+#home h3 {
+  color: #fff;
+  font-size: 16px;
+}
+
+// How it works partial
+#hiw {
+}
+
+#hiw #signup {
+  background-color: #19353c;
+  padding: 37px 0 19px;
+}
+
+#hiw #signup label {
+  color: #8db2be;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#hiw #signup input[type=text] {
+  padding: 15px 100px 15px 5px;
+  width: 304px;
+  font-size: 17px;
+  margin-top: -10px;
+}
+
+#hiw #signup input[type=submit] {
+  position: relative;
+  left: -92px;
+  top: -5px;
+}
+
+#hiw #learn-more {
+  background-color: #253f46;
+  padding: 23px;
+}
+
+#hiw #learn-more a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+#hiw #works {
+  background-color: #e4e7e8;
+  margin: 0 auto;
+  width: 100%;
+  padding: 45px 0 50px;
+}
+
+#hiw #works h1 {
+}
+
+#hiw #works .illustration {
+  margin-left: 145px;
+}
+
+#hiw #works .arrow-col {
+  padding-top: 192px;
+}
+
+#hiw .col {
+  float: left
+}
+
+#hiw .col .desc {
+  color: #888;
+}
+
+#hiw #ads {
+  background-color: #dbdedf;
+  padding: 25px 0 30px;
+}
+
+#hiw #ads .illustration {
+  margin-left: 350px;
+  padding-bottom: 40px;
+}
+
+#hiw #ads .col {
+  margin-right: 20px;
+}
+
+#hiw #ads .col .desc {
+  color: #666;
+}
+
+// Privacy partial
+#privacy {
+  background-color: #fff;
+  padding: 50px 0 150px;
+}
+
+#privacy h1 {
+  color: #1b4755;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#privacy h2 {
+  color: #849ba2;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#privacy p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#privacy .desc {
+  margin-left: 200px;
+}
+
+#privacy hr {
+  width: 50%;
+  margin-left: 300px;
+}
+
+#privacy span {
+  color: #0f4b57;
+  font-weight: normal;
+  font-family: 'Museo500';
+  font-size: 16px;
+  margin-right: 20px;
+}

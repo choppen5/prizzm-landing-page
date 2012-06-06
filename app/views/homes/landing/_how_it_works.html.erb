@@ -1,0 +1,105 @@
+<div id="hiw" class="container">
+  <div id="signup">
+    <%= form_tag "#", :class => "form-inline" do -%>
+      <%= label_tag :email, "Help fix advertising" -%>
+      <%= text_field_tag :email, "", :placeholder => "email address" -%>
+      <%= submit_tag "Sign Up", :class => "btn btn-large btn-info" -%>
+    <%- end -%>
+  </div>
+
+  <div id="learn-more">
+    <%= link_to "#" do -%>
+      <i class="icon-arrow-down"></i>Learn more about Prizzm
+    <%- end -%>
+  </div>
+
+  <div id="works">
+    <h1>How it works</h1>
+
+    <div class="illustration">
+      <div class="col span3">
+        <div class="illu">
+          <%= image_tag "check.png" -%>
+        </div>
+
+        <div class="desc">
+          Record your interests and<br />
+          change them any time.
+        </div>
+      </div>
+
+      <div class="col arrow-col">
+        <%= image_tag "arrow.png" -%>
+      </div>
+
+      <div class="col span2">
+        <div class="illu">
+          <%= image_tag "global.png" -%>
+        </div>
+
+        <div class="desc">
+          Pick your location to<br />
+          enhance local offers.
+        </div>
+      </div>
+
+      <div class="col arrow-col">
+        <%= image_tag "arrow.png" -%>
+      </div>
+
+      <div class="col span3">
+        <div class="illu">
+          <%= image_tag "rate.png" -%>
+        </div>
+
+        <div class="desc">
+          Rate ads until they are<br />
+          actually interesting to you.
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div id="ads">
+    <h1>Ads suck</h1>
+
+    <div class="illustration">
+      <div class="col">
+        <div class="illu">
+          <%= image_tag "spy.png" -%>
+        </div>
+        <div class="desc">
+          Browsers spying
+        </div>
+      </div>
+      <div class="col">
+        <div class="illu">
+          <%= image_tag "data.png" -%>
+        </div>
+        <div class="desc">
+          Reselling your data
+        </div>
+      </div>
+      <div class="col">
+        <div class="illu">
+          <%= image_tag "spam.png" -%>
+        </div>
+        <div class="desc">
+          Spam email
+        </div>
+      </div>
+      <div class="col">
+        <div class="illu">
+          <%= image_tag "ads.png" -%>
+         </div>
+        <div class="desc">
+          Irrelevant ads
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <h1>Prizzm fixes that</h1>
+  </div>
+</div>

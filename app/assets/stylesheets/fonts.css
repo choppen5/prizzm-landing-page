@@ -11,10 +11,10 @@
 
 @font-face {
   font-family: 'MuseoSans500';
-  src: url('webfonts/232AC0_0_0.eot');
-  src: url('webfonts/232AC0_0_0.eot?#iefix') format('embedded-opentype'),
-       url('webfonts/232AC0_0_0.woff') format('woff'),
-       url('webfonts/232AC0_0_0.ttf') format('truetype');
+  src: url('fonts/232AC0_0_0.eot');
+  src: url('fonts/232AC0_0_0.eot?#iefix') format('embedded-opentype'),
+       url('fonts/232AC0_0_0.woff') format('woff'),
+       url('fonts/232AC0_0_0.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

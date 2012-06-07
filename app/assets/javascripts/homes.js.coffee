@@ -5,10 +5,10 @@
 jQuery ->
   $(window).resize ->
     winHeight = $(window).height()
-
     $('#home').height(winHeight - 188)
     $('#home h1').css('padding-top', ($('#home').height() - 95) / 2)
 
-    console.log $('#home h1').css('padding-top')
-
   $(window).trigger('resize')
+
+  $('#learn-more a').bind 'click', (e)->
+    $.scrollTo('#works', duration: 700)

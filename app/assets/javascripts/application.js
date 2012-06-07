@@ -15,3 +15,9 @@
 //= require twitter/bootstrap
 //= require_tree .
 
+$(document).ready(function() {
+
+  $('.tagline').hide();
+  setTimeout("$('.tagline').fadeIn(1500)", 600);
+
+});

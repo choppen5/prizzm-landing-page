@@ -82,7 +82,7 @@ input[type="submit"] {
   padding: 35px 0;
 }
 
-#signup > div {
+#signup > div#signup-form {
   margin: 0 auto;
   width: 605px;
   height: 50px;
@@ -146,7 +146,7 @@ input[type="submit"] {
 
 #hiw #thankyou {
   background: #19353c;
-  padding: 0 0 35px;
+  padding: 0;
 }
 
 #hiw #thankyou h1 {
@@ -160,6 +160,7 @@ input[type="submit"] {
   color:#8BBCCE;
   font-size:22px;
   line-height:22px;
+  margin-top: 10px;
 }
 
 

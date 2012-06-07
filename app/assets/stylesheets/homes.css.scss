@@ -45,6 +45,8 @@ input[type="submit"] {
 // Home partial
 #home {
   background-color: #0d2a31;
+  z-index: 10;
+  position: relative;
   height: 400px;
 }
 
@@ -72,17 +74,25 @@ input[type="submit"] {
 }
 
 // How it works partial
-#hiw {
-}
 
 #hiw #signup {
   background: #19353c;
+  z-index: 9;
+  position: relative;
   padding: 35px 0;
 }
 
-#signup form {
-  width: 605px;
+#signup > div {
   margin: 0 auto;
+  width: 605px;
+  height: 50px;
+  position: relative;
+}
+
+#signup form {
+  position: absolute;
+  top: -90px;
+  left: 0;
 }
 
 #hiw #signup label {
@@ -285,4 +295,34 @@ input[type="submit"] {
       background: #2d5057 url('contact.png') 15px center no-repeat;
     }
   }
+}
+
+/*sign up form animation*/
+#signup form {
+  -webkit-animation: slide .5s 1 ease-in-out;
+  -moz-animation:    slide .5s 1 ease-in-out;
+  animation:         slide .5s 1 ease-in-out;
+  -webkit-animation-delay: 3s;
+	animation-delay:         3s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide {
+	0%   { top: -90px;}
+	85%  { top: 15px;}
+	100% { top: 0;}
+}
+
+@-moz-keyframes slide {
+	0%   { top: -90px;}
+	85%  { top: 15px;}
+	100% { top: 0;}
+}
+
+@keyframes slide {
+	0%   { top: -90px;}
+	85%  { top: 10px;}
+	100% { top: 0;}
 }

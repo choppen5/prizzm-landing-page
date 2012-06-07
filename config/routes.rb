@@ -1,4 +1,6 @@
 PrizzmLandingPage::Application.routes.draw do
+  resources :users
+
   get "homes/landing"
 
   # You can have the root of your site routed with "root"

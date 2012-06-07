@@ -10,5 +10,9 @@ jQuery ->
 
   $(window).trigger('resize')
 
-  $('#learn-more a').bind 'click', (e)->
+  $('#learn-more a').bind 'click', ->
     $.scrollTo('#works', duration: 700)
+
+  $('#signup-form form input[type=submit]').bind 'click', (e) ->
+    e.preventDefault()
+    $(this).submit() if $('#user_email').val().trim().match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/i)

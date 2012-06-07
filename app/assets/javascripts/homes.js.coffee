@@ -3,6 +3,12 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
-  winHeight = $(window).height()
+  $(window).resize ->
+    winHeight = $(window).height()
 
-  $('#home').height(winHeight - 190)
+    $('#home').height(winHeight - 188)
+    $('#home h1').css('padding-top', ($('#home').height() - 95) / 2)
+
+    console.log $('#home h1').css('padding-top')
+
+  $(window).trigger('resize')

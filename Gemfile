@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-gem 'pg'
 gem 'hirefireapp'
 gem 'activeadmin'
 
@@ -17,6 +16,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg'
+  gem 'rack-google_analytics'
+end
 
 group :development do
   gem 'sqlite3'

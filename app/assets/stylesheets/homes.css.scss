@@ -127,17 +127,20 @@ input[type="submit"] {
 }
 
 #hiw #signup input[type=submit] {
+
   background: #3ca0a1;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
   border: 0;
   width: 90px;
-  padding: 11px 0 13px;
+  padding: 16px 0 14px;
   float: right;
   margin: -45px 4px 0 0;
   z-index: 10;
   position: relative;
+  border-radius: 3px;
+  text-shadow: none;
   &:hover {
     background: #46b4b5;
   }
@@ -277,6 +280,7 @@ input[type="submit"] {
 
 #privacy h2 a {
   color: #1b4755;
+  text-decoration: none;
 }
 
 #privacy h3 {

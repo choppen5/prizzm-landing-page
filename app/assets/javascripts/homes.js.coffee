@@ -12,6 +12,7 @@ jQuery ->
 
   $('#learn-more a').bind 'click', ->
     $.scrollTo('#works', duration: 700)
+    return false
 
   $('#signup-form form input[type=submit]').bind 'click', (e) ->
     e.preventDefault()

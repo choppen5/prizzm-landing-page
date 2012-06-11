@@ -318,9 +318,9 @@ input[type="submit"] {
     padding: 15px 15px 15px 40px;
     color: #fff;
     font-size: 16px;
+    text-decoration: none;
     background: #203a3f url('contact.png') 15px center no-repeat;
     &:hover {
-      text-decoration: none;
       background: #2d5057 url('contact.png') 15px center no-repeat;
     }
   }
